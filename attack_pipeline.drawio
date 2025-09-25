@@ -1,0 +1,492 @@
+<mxfile host="65bd71144e">
+    <diagram id="ngtULm55A_yP65OHlemH" name="Page-1">
+        <mxGraphModel dx="2006" dy="817" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="11850" pageHeight="2100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Generic Attack Pipeline&amp;nbsp;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="440" width="1400" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="edgeStyle=none;html=1;" edge="1" parent="2" target="4">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="140" y="185" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="Select Source Files" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="20" y="155" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="edgeStyle=none;html=1;" edge="1" parent="2" target="25">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="490" y="185" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="101" value="" style="edgeStyle=none;html=1;" edge="1" parent="2" source="4" target="100">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Initialize Processed File Counter using Key Count per file" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="180" y="155" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="edgeStyle=none;html=1;" edge="1" parent="2" source="25" target="28">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Log opened/started File" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="530" y="155" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="edgeStyle=none;html=1;" edge="1" parent="2" source="26" target="30">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Attempt to break key" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="1100" y="155" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="" style="edgeStyle=none;html=1;" edge="1" parent="2" source="27" target="26">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Move Key with file name into Key Queue&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="960" y="155" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="" style="edgeStyle=none;html=1;" edge="1" parent="2" source="28" target="29">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Parse File into Keys&lt;/span&gt;&lt;span style=&quot;scrollbar-color: light-dark(#e2e2e2, #4b4b4b)&lt;br/&gt;&#x9;&#x9;&#x9;&#x9;&#x9;light-dark(#fbfbfb, var(--dark-panel-color)); text-wrap: nowrap; font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Feed%20Source%20Files%20into%20the%20File%20Queue%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22700%22%20y%3D%22600%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="680" y="155" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="edgeStyle=none;html=1;" edge="1" parent="2" source="29" target="27">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="Log certificate count per file" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="820" y="155" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="Report completion after attempts" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="1250" y="155" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="On Success Send key and solution to writer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="1250" y="65" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="Check Reports of Atempt Completions" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="2">
+                    <mxGeometry x="960" y="235" width="110" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="2" source="29" target="40">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="880" y="265"/>
+                        </Array>
+                        <mxPoint x="810" y="250.01999999999998" as="sourcePoint"/>
+                        <mxPoint x="930" y="280.02" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.015;exitY=0.511;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="2" source="40" target="44">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1080" y="266"/>
+                            <mxPoint x="1120" y="265"/>
+                        </Array>
+                        <mxPoint x="1070" y="295" as="sourcePoint"/>
+                        <mxPoint x="1150" y="305" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="If all keys of a file were attempted, log file close" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="2">
+                    <mxGeometry x="1120" y="235" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="2" source="26" target="31">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1165" y="95"/>
+                        </Array>
+                        <mxPoint x="1040" y="45" as="sourcePoint"/>
+                        <mxPoint x="1120" y="95" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="100" value="Feed Source Files into the File Queue" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="370" y="155" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Architecture" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="50" width="1400" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="edgeStyle=none;html=1;" edge="1" parent="5" source="8">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="260" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="File Queue&amp;nbsp; &amp;nbsp; &amp;nbsp;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="5">
+                    <mxGeometry x="80" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Readers" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="5">
+                    <mxGeometry x="260" y="60" width="200" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Reader" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="9">
+                    <mxGeometry x="40" y="40" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Reader" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="9">
+                    <mxGeometry x="40" y="110" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="Processed File Counter" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="9">
+                    <mxGeometry x="40" y="180" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="5" source="12" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Key Queue&amp;nbsp; &amp;nbsp; &amp;nbsp;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="5">
+                    <mxGeometry x="520" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Workers" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="5">
+                    <mxGeometry x="690" y="60" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Worker" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="13">
+                    <mxGeometry x="40" y="40" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Worker" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="13">
+                    <mxGeometry x="40" y="110" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Writers" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="5">
+                    <mxGeometry x="1090" y="60" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Writer" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="16">
+                    <mxGeometry x="40" y="40" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Writer" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="16">
+                    <mxGeometry x="40" y="110" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="5" source="19" target="16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Results Queue&amp;nbsp; &amp;nbsp; &amp;nbsp;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="5">
+                    <mxGeometry x="930" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="5" target="12">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="460" y="160" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="5" source="13" target="19">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="Writer" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="1610" width="910" height="440" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="" style="ellipse;fillColor=strokeColor;html=1;" vertex="1" parent="47">
+                    <mxGeometry x="20" y="230" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="47" source="50" target="56">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210" y="245" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="50" value="" style="rhombus;" vertex="1" parent="47">
+                    <mxGeometry x="130" y="230" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="47" source="48" target="50">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="90" y="220" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="47" source="56" target="58">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="Channel Closed" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="52">
+                    <mxGeometry x="-0.2425" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="47" source="56" target="61">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="610" y="245" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="55" value="Got (key, attack_name, solution)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="54">
+                    <mxGeometry x="-0.3207" relative="1" as="geometry">
+                        <mxPoint x="20" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="56" value="Attempt to get Item from Queue" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="47">
+                    <mxGeometry x="240" y="200" width="240" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="47" source="58" target="59">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="&lt;div&gt;Terminate&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="47">
+                    <mxGeometry x="460" y="130" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" vertex="1" parent="47">
+                    <mxGeometry x="710" y="145" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="47" source="61" target="50">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="305" y="450" as="targetPoint"/>
+                        <mxPoint x="1072.5" y="360" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="785" y="330"/>
+                            <mxPoint x="145" y="330"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="61" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Log result to DB&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="47">
+                    <mxGeometry x="715" y="215" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="Reader" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="780" width="1640" height="440" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="" style="ellipse;fillColor=strokeColor;html=1;" vertex="1" parent="71">
+                    <mxGeometry x="20" y="230" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="71" source="74" target="80">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210" y="245" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="74" value="" style="rhombus;" vertex="1" parent="71">
+                    <mxGeometry x="130" y="230" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="71" source="72" target="74">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="90" y="220" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="71" source="80" target="82">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="Channel Closed" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="76">
+                    <mxGeometry x="-0.2425" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="71" source="80" target="85">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="610" y="245" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="79" value="got File_Name" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="78">
+                    <mxGeometry x="-0.3207" relative="1" as="geometry">
+                        <mxPoint x="20" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="80" value="Attempt to get Item from Queue" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="71">
+                    <mxGeometry x="240" y="200" width="240" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="71" source="82" target="83">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="&lt;div&gt;Terminate&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="71">
+                    <mxGeometry x="460" y="130" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" vertex="1" parent="71">
+                    <mxGeometry x="710" y="145" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="" style="edgeStyle=none;html=1;" edge="1" parent="71" source="85" target="88">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Log File Open&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="71">
+                    <mxGeometry x="590" y="215" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="" style="edgeStyle=none;html=1;" edge="1" parent="71" source="88" target="94">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Parse File into Keys&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="71">
+                    <mxGeometry x="760" y="215" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="" style="edgeStyle=none;html=1;" edge="1" parent="71" source="90" target="97">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="98">
+                    <mxGeometry x="-0.1407" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="90" value="More Items?" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="71">
+                    <mxGeometry x="895" y="310" width="120" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="71" source="90" target="74">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="780" y="338"/>
+                            <mxPoint x="145" y="338"/>
+                        </Array>
+                        <mxPoint x="725" y="-110" as="sourcePoint"/>
+                        <mxPoint x="805" y="-60" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="93" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="92">
+                    <mxGeometry x="-0.9567" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="96" value="" style="edgeStyle=none;html=1;" edge="1" parent="71" source="94" target="90">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="" style="rhombus;" vertex="1" parent="71">
+                    <mxGeometry x="940" y="230" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="" style="edgeStyle=none;html=1;" edge="1" parent="71" source="97" target="103">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="Add Key into Key Queue" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="71">
+                    <mxGeometry x="1070" y="307.5" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="" style="edgeStyle=none;html=1;" edge="1" parent="71" source="103" target="105">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" value="Check Processed File Counter&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="71">
+                    <mxGeometry x="1220" y="307.5" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" value="" style="edgeStyle=none;html=1;" edge="1" parent="71" source="105" target="109">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="114" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="110">
+                    <mxGeometry x="-0.2944" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="105" value="All keys Processed from a File?" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="71">
+                    <mxGeometry x="1155" y="215" width="250" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="71" source="105" target="94">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="106">
+                    <mxGeometry x="-0.6137" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="112" value="" style="edgeStyle=none;html=1;" edge="1" parent="71" source="109" target="111">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" value="Get processed File Name" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="71">
+                    <mxGeometry x="1220" y="115" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="113" value="" style="edgeStyle=none;html=1;" edge="1" parent="71" source="111" target="94">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" value="Log File Close" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="71">
+                    <mxGeometry x="895" y="115" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" value="Worker" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="1190" y="1310" width="1180" height="440" as="geometry"/>
+                </mxCell>
+                <mxCell id="116" value="" style="ellipse;fillColor=strokeColor;html=1;" vertex="1" parent="115">
+                    <mxGeometry x="20" y="230" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="115" source="118" target="124">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210" y="245" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="118" value="" style="rhombus;" vertex="1" parent="115">
+                    <mxGeometry x="130" y="230" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="115" source="116" target="118">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="90" y="220" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="120" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="115" source="124" target="126">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="121" value="Channel Closed" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="120">
+                    <mxGeometry x="-0.2425" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="122" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="115" source="124" target="129">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="610" y="245" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="123" value="got Key" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="122">
+                    <mxGeometry x="-0.3207" relative="1" as="geometry">
+                        <mxPoint x="20" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="124" value="Attempt to get Item from Queue" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="115">
+                    <mxGeometry x="240" y="200" width="240" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="115" source="126" target="127">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="126" value="&lt;div&gt;Terminate&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="115">
+                    <mxGeometry x="460" y="130" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="127" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" vertex="1" parent="115">
+                    <mxGeometry x="710" y="145" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="129" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Log File Open&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="115">
+                    <mxGeometry x="590" y="215" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="130" value="" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="115" source="129" target="138">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="900" y="245" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="132" value="" style="edgeStyle=none;html=1;" edge="1" parent="115" source="134" target="140">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="133" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="132">
+                    <mxGeometry x="-0.1407" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="134" value="More Attacks?" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="115">
+                    <mxGeometry x="807.9300000000001" y="311.25" width="120" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="115" source="134" target="118">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="710" y="339"/>
+                            <mxPoint x="145" y="339"/>
+                        </Array>
+                        <mxPoint x="790" y="370" as="sourcePoint"/>
+                        <mxPoint x="805" y="-60" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="136" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="135">
+                    <mxGeometry x="-0.9567" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="137" value="" style="edgeStyle=none;html=1;" edge="1" parent="115" source="138" target="134">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="138" value="" style="rhombus;" vertex="1" parent="115">
+                    <mxGeometry x="852.9300000000001" y="231.25" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="139" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="115" source="140" target="145">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1132.9300000000003" y="338.75" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="140" value="Attempt Attack" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="115">
+                    <mxGeometry x="982.9300000000001" y="308.75" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="153" value="" style="edgeStyle=none;html=1;" edge="1" parent="115" source="145" target="138">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="154" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="153">
+                    <mxGeometry x="-0.298" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="156" value="" style="edgeStyle=none;html=1;" edge="1" parent="115" source="145" target="155">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="157" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="156">
+                    <mxGeometry x="-0.2926" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="145" value="(Partial) Success?" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="115">
+                    <mxGeometry x="957.9300000000001" y="213.13" width="170" height="63.75" as="geometry"/>
+                </mxCell>
+                <mxCell id="155" value="Put Key, Attack Name, Solution into the Results Queue" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="115">
+                    <mxGeometry x="982.9300000000001" y="89.99499999999999" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="115" source="155" target="138">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="868" y="120"/>
+                        </Array>
+                        <mxPoint x="818" y="349" as="sourcePoint"/>
+                        <mxPoint x="830" y="170" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
