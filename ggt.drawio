@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="pDwzMYLToQqW02Is-Ldd" name="Page-1">
-        <mxGraphModel dx="1336" dy="1583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="11850" pageHeight="2100" math="0" shadow="0">
+        <mxGraphModel dx="1883" dy="819" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="11850" pageHeight="2100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -111,7 +111,7 @@
                     <mxGeometry x="715" y="215" width="140" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="49" value="Intra GGT Worker" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" parent="1" vertex="1">
-                    <mxGeometry x="200" y="760" width="1520" height="440" as="geometry"/>
+                    <mxGeometry x="200" y="760" width="1393" height="440" as="geometry"/>
                 </mxCell>
                 <mxCell id="50" value="" style="ellipse;fillColor=strokeColor;html=1;" parent="49" vertex="1">
                     <mxGeometry x="20" y="230" width="30" height="30" as="geometry"/>
@@ -222,7 +222,7 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="87" value="Inter GGT" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="200" y="400" width="1540" height="325" as="geometry"/>
+                    <mxGeometry x="200" y="400" width="1406" height="326" as="geometry"/>
                 </mxCell>
                 <mxCell id="88" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="87" source="89" target="101" edge="1">
                     <mxGeometry relative="1" as="geometry">
