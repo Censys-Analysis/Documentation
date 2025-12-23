@@ -29,3 +29,7 @@ Deduplicate the dataset using `deduplicator-mem`
 ### 3.2 Analyze using GGT
 
 ![imgs/ggt.png](imgs/ggt.png)
+
+## 4. Recover certificates
+
+Use the recovery repository to select a method of recovering the certificates from the vulnerable keys.
